@@ -1,0 +1,33 @@
+{
+  "name": "lichi/vault-sdk",
+  "type": "library",
+  "description": "PHP SDK for Vault",
+  "keywords": ["Lichi","lichi", "vault php sdk", "vault", "vault api", "vault sdk"],
+  "homepage": "https://github.com/IvanHunters/lichi-vault-sdk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ivan Okhotnikov",
+      "email": "ohotnikovivan@yandex.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "guzzlehttp/guzzle": "~7",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-mbstring": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lichi\\Vault\\": "src/",
+      "Lichi\\Vault\\Sdk\\": "src/sdk/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}
